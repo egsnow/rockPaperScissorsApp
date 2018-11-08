@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,23 +22,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="rock"/>
                                 <connections>
-                                    <action selector="rockButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vkC-MM-dsk"/>
+                                    <action selector="playerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="800-Wm-R01"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZq-ys-cBe">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZq-ys-cBe">
                                 <rect key="frame" x="279" y="711" width="115" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="scissors"/>
                                 <connections>
-                                    <action selector="scissorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nhn-GA-QTQ"/>
+                                    <action selector="playerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fkv-xd-yqC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMm-sE-mQQ">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMm-sE-mQQ">
                                 <rect key="frame" x="150" y="711" width="115" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="paper"/>
                                 <connections>
-                                    <action selector="paperButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QWG-LH-fNL"/>
+                                    <action selector="playerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hxt-Kx-8A1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Computer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSo-yp-0rd">
@@ -96,7 +96,7 @@
         <image name="Empty" width="704" height="396"/>
         <image name="Rules" width="2000" height="1913"/>
         <image name="paper" width="330" height="330"/>
-        <image name="resetButton" width="256" height="256"/>
+        <image name="resetButton" width="192" height="192"/>
         <image name="rock" width="330" height="330"/>
         <image name="scissors" width="330" height="330"/>
     </resources>
